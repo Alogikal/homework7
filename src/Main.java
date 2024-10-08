@@ -51,10 +51,10 @@ public class Main {
         System.out.println("------------------------------");
         float percent2 = 0.07F;
         float capital2 = 15000;
-        int totalCapital = 12000000;
+        int totalCapital2 = 12000000;
         int startCapital = 0;
         int month1 = 0;
-        while (startCapital < totalCapital) {
+        while (startCapital < totalCapital2) {
             startCapital += capital2 + capital2 * percent2;
             month1++;
             System.out.println("За " + month1 + " месяц Василий накопил " + startCapital);
@@ -79,10 +79,10 @@ public class Main {
         float year = 0;
         float rate = 0.5F;
         float percents = 0.07F;
-        float totalCapital2 = 0;
+        float totalSavings = 0;
         while (year <= 9) {
-            totalCapital2 += capital + capital * percents;
-            System.out.println(totalCapital2 + " " + year);
+            totalSavings += capital + capital * percents;
+            System.out.println(totalSavings + " " + year);
             year += rate;
         }
 
