@@ -5,14 +5,15 @@ public class Main {
         System.out.println("Задача 1");
         System.out.println("------------------------------");
         int totalSvings = 2459000;
-        int capital = 15000;
         float percent = 0.12F;
-        int start = 0;
+        int capital = 15000;
+        capital += capital * percent;
+        int totalCapital = 0;
         int month = 0;
-        while (start < totalSvings - capital + (capital * percent)) {
-            start += capital + capital * percent;
+        while (totalCapital < totalSvings - capital) {
+            totalCapital += capital;
             month++;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + start + " рублей" );
+            System.out.println("Месяц " + month + " сумма накоплений равна " + totalCapital + " рублей" );
         }
         System.out.println("------------------------------");
 
